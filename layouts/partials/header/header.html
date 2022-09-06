@@ -1,16 +1,42 @@
-{{ if .Site.Params.alert -}}
-  {{ partial "header/alert.html" . }}
-{{ end -}}
-
-<header class="navbar navbar-light">
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light navbar-show-hide navbar-toggle"
+    data-hs-header-options='{
+      "fixMoment": 1000,
+      "fixEffect": "slide"
+    }'>
   <div class="container">
-    <a class="navbar-brand monospace" href="{{ "/" | absURL }}">{{ .Site.Params.Title }}</a>
-    <div class="ms-auto">
-    {{ range .Site.Menus.main }}
-      <span class="navbar-text">
-        <a href="{{ .URL }}">{{- .Name -}}</a>
-      </span>
-    {{ end }}
-    </div>
+    <nav class="js-mega-menu navbar-nav-wrap">
+      
+      <a class="navbar-brand" href="/" aria-label="Oka bRionZ">
+        <img class="navbar-brand-logo" src="/brionz.svg" alt="Oka bRionZ navbar-brand-logo">
+      </a>
+      
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="hs-has-sub-menu nav-item">
+          <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            {{ .Pre }}
+            <span>{{ .Name }}</span>
+
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="portfolioMegaMenu" style="min-width: 14rem;">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{.URL}}"><span>{{.Name}}</span></a>
+              {{ end }}
+            </div>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{.URL}}" aria-expanded="false">{{ .Pre }}<span>{{ .Name }}</span></a>
+        </li>
+        {{end}}
+        {{end}}
+      </ul>
+    </nav>
   </div>
 </header>
