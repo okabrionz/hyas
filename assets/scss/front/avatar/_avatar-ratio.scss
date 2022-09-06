@@ -1,0 +1,80 @@
+/*------------------------------------
+  Avatar Ratio
+------------------------------------*/
+
+.avatar.avatar-4x3 {
+  width: $avatar-width;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width;
+    height: inherit;
+  }
+}
+
+.avatar-xss.avatar-4x3 {
+  width: $avatar-width-xss;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-xss;
+    height: inherit;
+  }
+}
+
+.avatar-xs.avatar-4x3 {
+  width: $avatar-width-xs;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-xs;
+    height: inherit;
+  }
+}
+
+.avatar-sm.avatar-4x3 {
+  width: $avatar-width-sm;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-sm;
+    height: inherit;
+  }
+}
+
+.avatar-lg.avatar-4x3 {
+  width: $avatar-width-lg;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-lg;
+    height: inherit;
+  }
+}
+
+.avatar-xl.avatar-4x3 {
+  width: $avatar-width-xl;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-xl;
+    height: inherit;
+  }
+}
+
+.avatar-xxl.avatar-4x3 {
+  width: $avatar-width-xxl;
+  height: auto;
+  @include border-radius(0);
+
+  .avatar-img {
+    width: $avatar-width-xxl;
+    height: inherit;
+  }
+}
