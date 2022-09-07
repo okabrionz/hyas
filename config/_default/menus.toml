@@ -1,14 +1,29 @@
 [[main]]
-  name = "GitHub"
-  url = "https://github.com/h-enk/hyas"
+  name = "Koleksi"
+  url = "/koleksi"
   weight = 10
 
-[[social]]
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/in/henkverlinde/"
-  weight = 20
+[[main]]
+name = "Informasi"
+url = "/informasi"
+weight = 20
+
+[[main]]
+name = "Cara Pesan"
+url = "/cara-pesan"
+weight = 20
+
+[[main]]
+name = "Tentang"
+url = "/tentang"
+weight = 40
+
+[[main]]
+name = "Kontak"
+url = "/kontak"
+weight = 50
 
 [[social]]
   name = "Twitter"
-  url = "https://twitter.com/henkverlinde"
+  url = "https://twitter.com/okabrionz"
   weight = 30

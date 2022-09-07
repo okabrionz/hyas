@@ -1,4 +1,4 @@
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light navbar-show-hide navbar-toggle"
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light bg-light navbar-show-hide navbar-toggle"
     data-hs-header-options='{
       "fixMoment": 1000,
       "fixEffect": "slide"
@@ -7,7 +7,8 @@
     <nav class="js-mega-menu navbar-nav-wrap">
       
       <a class="navbar-brand" href="/" aria-label="Oka bRionZ">
-        <img class="navbar-brand-logo" src="/brionz.svg" alt="Oka bRionZ navbar-brand-logo">
+        {{ $image := resources.GetMatch "images/sabila.png" }}
+        <img class="navbar-brand-logo" src='{{ $image.RelPermalink }}' alt="Oka bRionZ navbar-brand-logo">
       </a>
       
 
