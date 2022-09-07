@@ -3,6 +3,7 @@
   <div class="col-lg-7">
     <article>
       <h1>{{ .Title }}</h1>
+      {{if .Params.image}}{{.}}{{end}}
       {{ .Content }}
     </article>
   </div>
