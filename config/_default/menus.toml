@@ -4,24 +4,24 @@
   weight = 10
 
 [[main]]
-name = "Informasi"
-url = "/informasi"
-weight = 20
+  name = "Informasi"
+  url = "/blog/"
+  weight = 20
 
 [[main]]
-name = "Cara Pesan"
-url = "/cara-pesan"
-weight = 20
+  name = "Cara Pesan"
+  url = "/cara-pesan"
+  weight = 20
 
 [[main]]
-name = "Tentang"
-url = "/tentang"
-weight = 40
+  name = "Tentang"
+  url = "/tentang"
+  weight = 40
 
 [[main]]
-name = "Kontak"
-url = "/kontak"
-weight = 50
+  name = "Kontak"
+  url = "/kontak"
+  weight = 50
 
 [[social]]
   name = "Twitter"
