@@ -66,3 +66,8 @@ copyRight = "Copyright (c) 2020-2022 Oka bRionZ"
 alert = false
 alertDismissable = true
 alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.okabrionz.com/\" target=\"_blank\" rel=\"noopener\">Get the free Enterprise paper →</a>"
+
+
+# Logo
+logo = "/nav-logo.png"
+footerLogo = "/nav-logo.png"

@@ -7,8 +7,8 @@
     <nav class="js-mega-menu navbar-nav-wrap">
       
       <a class="navbar-brand" href="/" aria-label="Oka bRionZ">
-        {{ $image := resources.GetMatch "images/sabila.png" }}
-        <img class="navbar-brand-logo" src='{{ $image.RelPermalink }}' alt="Oka bRionZ navbar-brand-logo">
+        
+        <img class="navbar-brand-logo" src='{{ $.Site.Params.logo }}' alt="Oka bRionZ navbar-brand-logo">
       </a>
       
 

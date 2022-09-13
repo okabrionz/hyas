@@ -7,5 +7,5 @@ price: "500000"
 draft: false
 images: /images/blossom.jpg
 bestseller: true
-categories: "bunga papan"
+categories: bungapapan
 ---

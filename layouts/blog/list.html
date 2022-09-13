@@ -20,7 +20,7 @@
         <div class="card card-bordered h-100">
           <!-- Card Pinned -->
           <div class="card-pinned">
-            <img class="card-img-top lazyload blur-up" src="{{.Params.images}}" alt="Image Description">
+            <img class="card-img-top lazyload blur-up" src="{{if eq .Params.images nil}}/images/blossom.jpg{{else}}{{.Params.images}}{{end}}" alt="Image Description">
 
             <div class="card-pinned-top-start">
               {{if .Params.bestseller}}<small class="badge bg-success rounded-pill">Bestseller</small>{{end}}
@@ -59,16 +59,6 @@
 
           </div>
           <!-- End Card Body -->
-
-          <!-- Card Footer -->
-          <div class="card-footer pt-0">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="me-2">
-                <h5 class="card-title">Rp. {{ lang.NumFmt 2 .Params.price "- , ." }}</h5>
-              </div>
-              <a class="btn btn-outline-dark btn-sm btn-transition" href="{{.RelPermalink}}">Order</a>
-            </div>
-          </div>
           <!-- End Card Footer -->
         </div>
       </a>
