@@ -1,7 +1,65 @@
+# Koleksi
 [[main]]
   name = "Koleksi"
   url = "/koleksi"
   weight = 10
+  identifier = "koleksi"
+
+[[main]]
+  name = "Happy Wedding"
+  url = "/koleksi/happy-wedding"
+  weight = 100
+  parent = "koleksi"
+
+[[main]]
+  name = "Congratulations"
+  url = "/koleksi/congratulations"
+  weight = 200
+  parent = "koleksi"
+
+[[main]]
+  name = "Duka Cita"
+  url = "/koleksi/duka-cita"
+  weight = 300
+  parent = "koleksi"
+
+[[main]]
+  name = "Bunga Box"
+  url = "/koleksi/box"
+  weight = 400
+  parent = "koleksi"
+
+[[main]]
+  name = "Bunga Meja"
+  url = "/koleksi/bunga-meja"
+  weight = 500
+  parent = "koleksi"
+
+[[main]]
+  name = "Bunga Standing"
+  url = "/koleksi/standing"
+  weight = 600
+  parent = "koleksi"
+
+[[main]]
+  name = "Bunga Krans"
+  url = "/koleksi/krans"
+  weight = 700
+  parent = "koleksi"
+
+[[main]]
+  name = "Handbouquet"
+  url = "/koleksi/handbouquet"
+  weight = 800
+  parent = "koleksi"
+
+[[main]]
+  name = "Bunga Anggrek"
+  url = "/koleksi/anggrek"
+  weight = 900
+  parent = "koleksi"
+
+# End Koleksi
 
 [[main]]
   name = "Informasi"

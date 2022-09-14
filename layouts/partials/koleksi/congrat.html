@@ -1,16 +1,16 @@
   <!-- Card Grid -->
-  <div class="container content-space-sm-2">
+  <div class="container content-space-sm-1">
     <!-- Title -->
     <div class="w-md-75 text-center mx-md-auto mb-9">
-      <h2>{{.Title}}</h2>
-      <p>{{.Description}}</p>
+      <h2 class="text-danger">Bunga Papan Congratulations</h2>
+      <p>Koleksi Bunga Papan Congratulations</p>
     </div>
     <!-- End Title -->
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 mb-5">
 
-      {{ range last 6 .Site.Taxonomies.categories.bungapapan }}
-      <div class="col mb-5">
+      {{ range first 6 (where .Site.Pages "Type" "congrat") }}
+      <div class="col mb-5 my-3">
         <!-- Card -->
         <a href="{{ .Page.RelPermalink }}">
           <div class="card card-bordered h-100">
@@ -21,31 +21,17 @@
               <div class="card-pinned-top-start">
                 {{if .Params.bestseller}}<small class="badge bg-success rounded-pill">Bestseller</small>{{end}}
               </div>
-
-              <div class="card-pinned-bottom-start">
-                <div class="d-flex align-items-center flex-wrap">
-                  <!-- Rating -->
-                  <div class="d-flex gap-1">
-                    <img src="/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                    <img src="/assets/svg/illustrations/star.svg" alt="Review rating" width="16">
-                  </div>
-                  <!-- End Rating -->
-                  <div class="ms-1">
-                    <span class="fw-semibold text-white me-1">4.91</span>
-                    <span class="text-white-70">(1.5k+ reviews)</span>
-                  </div>
-                </div>
-              </div>
             </div>
             <!-- End Card Pinned -->
 
             <!-- Card Body -->
             <div class="card-body">
               <small class="card-subtitle">{{with .Params.categories}}<a href="/categories/{{. | urlize}}">
-                  {{.}}</a>{{end}}</small>
+                  {{.}}</a>{{end}}
+              </small>
+              <small class="card-subtitle">{{with .Params.tags}}<a href="/tags/{{. | urlize}}">
+                  {{.}}</a>{{end}}
+              </small>
 
               <div class="mb-3">
                 <h3 class="card-title">
@@ -73,5 +59,4 @@
     </div>
     <!-- End Row -->
   </div>
-
   </div>

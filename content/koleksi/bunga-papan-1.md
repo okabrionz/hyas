@@ -7,5 +7,7 @@ price: "500000"
 draft: false
 images: /images/blossom.jpg
 bestseller: true
-categories: bungapapan
+categories: hwd
+tags: 
+    - hwd
 ---

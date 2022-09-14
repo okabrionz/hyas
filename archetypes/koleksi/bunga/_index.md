@@ -5,7 +5,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 images: 
 price: "450000"
-categories: bungapapan
+categories: hwd
 draft: false
 images: 
 ---

@@ -1,16 +1,11 @@
 {{define "main"}}
 
-
+{{ partial "header/hero-3.html" . }}
 <!-- Card Grid -->
 <div class="container content-space-sm-2">
   <!-- Title -->
-  <div class="w-md-75 text-center mx-md-auto mb-9">
-    <h2>{{.Title}}</h2>
-    <p>{{.Description}}</p>
-  </div>
-  <!-- End Title -->
 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 mb-5">
 
     {{ $paginator := .Paginate (.Data.Pages) -}}
     {{ range $paginator.Pages -}}

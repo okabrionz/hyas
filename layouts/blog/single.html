@@ -1,9 +1,26 @@
-{{ define "main" }}
-<div class="container content-space-sm-3">
-  <article>
-    <div class="text-center"><h1>{{ .Title }}</h1></div>
-    
-    {{ .Content }}
-  </article>
-</div>
-{{ end }}
+{{define "main"}}
+
+<!-- Content -->
+<div class="container content-space-3 content-space-lg-3">
+    <!-- Card -->
+    <div class="card card-lg">
+      <!-- Header -->
+      <div class="card-header bg-danger bg-gradient py-sm-10 text-center">
+        <h1 class="card-title h2 text-white">{{.Title}}</h1>
+        <p class="card-text text-white">Terakhir diperbarui: {{.Date.Format "2/05/2006" }}</p>
+      </div>
+      <!-- End Header -->
+  
+      <!-- Card Body -->
+      <div class="card-body">
+        <div class="mb-7">
+            {{.Content}}
+        </div>
+      </div>
+      <!-- End Card Body -->
+    </div>
+    <!-- End Card -->
+  </div>
+  <!-- End Content -->
+
+{{end}}
