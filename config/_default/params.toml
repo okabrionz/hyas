@@ -11,6 +11,11 @@ images = ["hyas.png"]
 ogLocale = "id_ID"
 titleHome = "Oka bRionZ HYS Hugo Starter"
 
+## Produk Halaman Depan
+
+hwd = "true"
+congrat = "true"
+
 ## Twitter Cards
 twitterSite = "@okabrionz"
 twitterCreator = "@hokabrionz"

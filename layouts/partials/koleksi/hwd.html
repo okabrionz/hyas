@@ -1,12 +1,11 @@
   <!-- Card Grid -->
+  {{ if in site.Params.hwd "true" }}
   <div class="container content-space-sm-1">
     <!-- Title -->
     <div class="w-md-75 text-center mx-md-auto mb-9">
       <h2 class="text-danger">Bunga Papan Happy Wedding</h2>
       <p>Koleksi Bunga Papan Happy Wedding</p>
     </div>
-    <!-- End Title -->
-
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 mb-5">
 
       {{ range first 6 (where .Site.Pages "Type" "hwd") }}
@@ -57,6 +56,6 @@
       </div>
       {{end}}
     </div>
-    <!-- End Row -->
   </div>
   </div>
+  {{end}}

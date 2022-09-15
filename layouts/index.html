@@ -2,8 +2,12 @@
 
 {{ partial "header/hero.html" . }}
 {{ partial "fitur.html" . }}
+
 {{ partial "koleksi/hwd.html" . }}
+
+{{ if in $.Site.Params.congrat "true" }}
 {{ partial "koleksi/congrat.html" . }}
+{{end}}
 
 
 <!-- End Card Grid -->
