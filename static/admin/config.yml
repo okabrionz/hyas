@@ -15,9 +15,9 @@ backend:
         - { label: "Featured Image", name: "images", widget: "image" }
         - { label: "Body", name: "body", widget: "markdown" }
 
-    - name: "Happy Wedding"
+    - name: "hwd"
       label: "Koleksi Bunga Papan Happy Wedding" 
-      folder: "content/koleksi"
+      folder: "content/koleksi/hwd"
       create: true
       slug: "{{slug}}"
       fields:

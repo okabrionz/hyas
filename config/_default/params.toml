@@ -1,8 +1,8 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Salsabila"
-titleSeparator = "-"
+title = "Salsabilla Florist"
+titleSeparator = "|"
 titleAddition = "Pengrajin Bunga #1 Terbaik di Indonesia"
 description = "Oka bRionZ is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 
@@ -18,8 +18,8 @@ twitterCreator = "@hokabrionz"
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Salsabilla"
-schemaAuthor = "Salsabilla"
+schemaName = "Salsabilla Florist"
+schemaAuthor = "Salsabilla Florist"
 schemaAuthorTwitter = "https://twitter.com/salsabilla"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/salsabilla/"
 schemaAuthorGitHub = "https://github.com/salsabilla"
